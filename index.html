@@ -1,17 +1,41 @@
 <html>
 <head>
   <style>
-     body{
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: white;
+  color: blue
+} body{
          text-align: center;
          background-image: linear-gradient(rgb(13, 175, 177), rgb(222, 222, 222));
          min-width: 100%;
          min-height: 100%;
       }
-  </style><iframe src="https://giphy.com/embed/VpmPTHI4ZwTm0" width="480" height="264" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/water-beach-summer-VpmPTHI4ZwTm0">via GIPHY</a></p>
+  </style>
 </head>
 
 <body>
-<h1>Polution</h1>
+<br><h1>Polution</h1>
 <h2>
 
 </h2>
@@ -40,7 +64,63 @@ p {
 <p>Water pollution depletes aquatic ecosystems and triggers unbridled proliferation of phytoplankton in lakes — eutrophication —. Contamination of the food chain..</p>
 <p>oanisms including large fish die when oxygen levels fall too far. Fine particles that don't settle out can get stuck in the ventricles of fish. This can also lead to fish kills. Debris in the water can block sunlight, starving plants or causing algae blooms and lowering oxygen in the water..</p>
 
+</body><!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<div style="padding-left:16px">
+  <h2>contamnated water<a</h2>
+  <p>Some content..</p>
+</div>
+
 </body>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The button Element</h1>
+
+
+ 
+</body>
+</html>
+
+</html>
+
 </html><!DOCTYPE html>
 <html>
 <head>
@@ -70,8 +150,28 @@ p {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HQTUWK7CM-Y?si=xwSlXzc0sBrRiYxZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 
 </html>
